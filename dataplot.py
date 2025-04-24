@@ -119,8 +119,7 @@ def plot_categorical_features(data):
 # Function to plot the distribution of numerical features
 def plot_numerical_features(data):
     st.write("### Distribution of Numerical Features")
-    st.write(
-        "These histograms show the distribution of numerical features in the dataset.")
+    st.write("These histograms show the distribution of numerical features in the dataset.")
     numerical_features = ['Age', 'RestingBP', 'Cholesterol', 'MaxHR', 'Oldpeak']
     fig, axes = plt.subplots(nrows=3, ncols=2, figsize=(10, 15))
     for i, feature in enumerate(numerical_features):
@@ -129,8 +128,9 @@ def plot_numerical_features(data):
     plt.tight_layout()
     st.pyplot(fig)
     st.markdown("""
-    -  Check its distribution pattern (e.g., normal, skewed, etc.)
-    -  Numerical characteristics are close to normal distribution. ldpeak's data distribution is rightly skewed.""")
+    - Check its distribution pattern (e.g., normal, skewed, etc.)
+    - Numerical characteristics are close to normal distribution. Oldpeak's data distribution is rightly skewed.
+    """)
 
 def plot_categorical_feature_distributions(data, categorical_features, colors):
 
