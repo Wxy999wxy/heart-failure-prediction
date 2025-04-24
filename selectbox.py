@@ -17,7 +17,7 @@ def main():
 
         st.title("Heart Disease Prediction System")
 
-        st.image("./pic1.png",  use_container_width=True)
+        st.image("./pic1.png")
 
         st.markdown("""
             ## About the Project:
